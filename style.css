@@ -1,6 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
 * 
 {
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0;
   padding: 0;
 }
 
+body
+{
+    background-color: #000000;
+    font-family: "Archivo", sans-serif;
+    font-size:1.4em;
+    color:#ffffff;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+nav {
+    text-transform: uppercase;
+    display: flex; /*adicionar mais espaço entre as palavras do menu*/
+    gap: 5em; /*definir espaço entre as palavras do menu*/
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+
+p{ /*p do sobre mim*/
+    color:#ffffff;
+    font-size:1em;
+    text-align: justify;
+    padding-top: 1em;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900; /*black*/
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 400; /*regular*/
+    padding-top: 2em;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 400; /*regular*/
+    padding-top:2em;
+}
+
+h4{
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-top:1em;
+}
+
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a:active{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+span{
+    text-transform: uppercase;
+    font-weight: 900; /*black*/
+}
+
+section{
+    padding-right: 50%;
+    display: block;
+}
