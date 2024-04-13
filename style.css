@@ -4,7 +4,8 @@
 
 * 
 {
-  
+ /* outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0;
   padding: 0;
 }
@@ -72,9 +73,10 @@ a:visited{
     font-weight: bold;
 }
 
-a:hover{
+nav a:hover{
     color: #ffffff;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 a:active{
@@ -87,17 +89,28 @@ span{
     font-weight: 900; /*black*/
 }
 
+#sobremim, #projetos, #contactos{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 section{
     padding-right: 50%;
 }
 
-footer img{
+footer a img{
     width: 3%;
     height: 3%;
     padding-top: 15%;
+    transition: opacity 0.3s ease; /* suaviza a transição da troca de imagem */
+}
+
+footer a:hover img{
+    opacity: 0; /* torna a imagem original transparente */
 }
 
 footer p{
     text-align: right;
     font-size: 60%;
 }
+
