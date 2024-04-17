@@ -4,8 +4,8 @@
 
 * 
 {
-  /*outline: 1px dashed red;
-  outline-offset: -1px;*/
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0;
   padding: 0;
 }
@@ -44,20 +44,22 @@ nav {
     position: sticky; /*faz menu fixar no momento do scroll + top e left*/
     top: 0%;
     left: 0%;
+    gap:2em;
 }
 
 nav a{
     display: flex;
-    gap:20px;
+    gap:2em;
 }
 
 .menu-links {
     display: flex;
-    gap:40px;
+    gap:2em;
 }
 
 .menu-links a{
     display: flex; 
+    gap:2em;
 }
 
 
@@ -141,11 +143,12 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 
 .footer-socialmedia{
     display: flex;
-    gap: 20px;
+    gap: 0.5em;
 }
 
 footer p{
@@ -194,4 +197,31 @@ footer a:hover img{
 .socialmedia p:hover{
     background-color:#ffffff;
     color:#000000;
+}
+
+
+
+figure 
+{
+  width: 50%;
+  height: 50%;
+  float: left;
+  
+    
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  
+}
+
+
+figure img 
+{
+  width: 100%;
+}
+
+
+figcaption 
+{
+  visibility: hidden;
 }
