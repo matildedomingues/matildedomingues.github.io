@@ -4,8 +4,8 @@
 
 * 
 {
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  /*outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0;
   padding: 0;
 }
@@ -22,6 +22,36 @@
 
 }
 
+.capa-index{
+    background-image: url('projects/projeto1/imagens/capaindex.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
+    background-position:top; /* Centraliza a imagem no cimo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    min-height: 100%; /* Garante que o corpo tenha pelo menos a altura da janela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.capa-about{
+    background-image: url('projects/projeto1/imagens/capaindex.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
+    background-position:top; /* Centraliza a imagem no cimo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    min-height: 100%; /* Garante que o corpo tenha pelo menos a altura da janela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.capa-projects{
+    background-color: #000000;
+    font-family: "Archivo", sans-serif;
+    font-size:1.4em;
+    color:#ffffff;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-bottom: 30em;
+}
+
 body
 {
     background-color: #000000;
@@ -31,7 +61,6 @@ body
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 3em;
-    padding-bottom: 3em;
 }
 
 
@@ -42,8 +71,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: sticky; /*faz menu fixar no momento do scroll + top e left*/
-    top: 0%;
-    left: 0%;
+    top: 0px;
+    left: 0px;
     gap:2em;
 }
 
@@ -140,10 +169,13 @@ span{
 }*/
 
 footer{
+    width: 100vw;   
+    height: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position:fixed;
+    bottom: 0;
 }
 
 .footer-socialmedia{
@@ -152,9 +184,7 @@ footer{
 }
 
 footer p{
-    text-align: right;
-    font-size:40%;
-    align-items: center;
+    font-size:0.4em;    
 }
 
 footer img{
@@ -165,8 +195,8 @@ footer img{
 }
 
 footer a:hover img{
-    opacity:1; 
-    background-color:#ffffff;
+    /*opacity:1;*/ 
+    background-color:#ffffff51;
     border-radius: 1.2em;
 }
 
@@ -200,28 +230,75 @@ footer a:hover img{
 }
 
 
-
 figure 
 {
-  width: 50%;
-  height: 50%;
-  float: left;
+  width: 30%;
+  height: 30%;
   
-    
-  border-width: 1px;
+  float:left;
+  margin-top: 25px;
+  margin-left: 25px;
+
+ /* border-width: 1px;
   border-color: rgb(255, 255, 255);
-  border-style: solid;
+  border-style: solid;*/
   
 }
-
 
 figure img 
 {
   width: 100%;
+  height: auto;
 }
-
 
 figcaption 
 {
-  visibility: hidden;
+  /*visibility: hidden;*/
+  text-align: center;
+  padding-top: 1px;
+  font-family: "Archivo", sans-serif;
+  font-size:0.5em;
+  font-weight: bold;
+}
+
+
+
+/* Responsive */
+
+@media only screen and (min-width: 600px) 
+{
+  figure 
+  {
+    width: 96%;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+  figure 
+  {
+    width: 47%;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  figure 
+  {
+    width: 30.5%;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+  figure 
+  {
+    width: 22.5%;
+  }
 }
