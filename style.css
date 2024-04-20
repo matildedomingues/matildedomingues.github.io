@@ -4,8 +4,8 @@
 
 * 
 {
-  /*outline: 1px dashed red;
-  outline-offset: -1px;*/
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0;
   padding: 0;
 }
@@ -45,11 +45,11 @@
     font-family: "Archivo", sans-serif;
     font-size:1.4em;
     color:#ffffff;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    margin-bottom: 30em;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 36em;
 }
 
 body
@@ -58,9 +58,9 @@ body
     font-family: "Archivo", sans-serif;
     font-size:1.4em;
     color:#ffffff;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 3em;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
 }
 
 
@@ -111,12 +111,14 @@ h3{
 }
 
 #Matilde{
+    font-size: 2.5em;
     text-transform: uppercase;
     font-weight: 400; /*regular*/
     text-align: left;
 }
 
 #Domingues{
+    font-size: 3.65em;
     text-transform: uppercase;
     font-weight: 900; /*black*/
     text-align: left;
@@ -170,7 +172,7 @@ span{
 
 footer{
     width: 100vw;   
-    height: 2em;
+    height: 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,11 +183,10 @@ footer{
 .footer-socialmedia{
     display: flex;
     gap: 0.5em;
-    padding-bottom: 2em;
 }
 
 footer p{
-    font-size:0.4em;    
+    font-size:0.5em;    
 }
 
 footer img{
@@ -193,14 +194,13 @@ footer img{
     height: 2em;
     align-items: center;
     display: flex;
-    padding-bottom: 2em;
+    
 }
 
 footer a:hover img{
     /*opacity:1;*/ 
     background-color:#ffffff51;
     border-radius: 1.2em;
-    padding-bottom: 2em;
 }
 
 
@@ -241,8 +241,8 @@ figure
   height: 30%;
   
   float:left;
-  margin-top: 25px;
-  margin-left: 25px;
+  margin-top: 2%;
+  margin-left: 2%;
 
  /* border-width: 1px;
   border-color: rgb(255, 255, 255);
@@ -262,7 +262,7 @@ figcaption
   text-align: center;
   padding-top: 1px;
   font-family: "Archivo", sans-serif;
-  font-size:0.5em;
+  font-size:0.7em;
   font-weight: bold;
 }
 
@@ -274,7 +274,7 @@ figcaption
 {
   figure 
   {
-    width: 96%;
+    width: 92%;
   }
 }
 
