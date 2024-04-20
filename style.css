@@ -4,8 +4,8 @@
 
 * 
 {
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  /*outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0;
   padding: 0;
 }
@@ -23,7 +23,8 @@
 }
 
 .capa-index{
-    background-image: url('projects/projeto1/imagens/capaindex.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    background-color: #000000;
+    /*background-image: url('projects/projeto1/imagens/capaindex.jpg');  Substitua pelo caminho correto da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a área disponível */
     background-position:top; /* Centraliza a imagem no cimo */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -32,7 +33,8 @@
 }
 
 .capa-about{
-    background-image: url('projects/projeto1/imagens/capaindex.jpg'); /* Substitua pelo caminho correto da sua imagem */
+    /* background-image: url('projects/projeto1/imagens/capaindex.jpg'); Substitua pelo caminho correto da sua imagem */
+    background-color: #000000;
     background-size: cover; /* Faz a imagem cobrir toda a área disponível */
     background-position:top; /* Centraliza a imagem no cimo */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
