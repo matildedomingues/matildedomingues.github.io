@@ -51,7 +51,6 @@
     padding-right: 4%;
     padding-top: 4%;
     padding-bottom: 4%;
-    margin-bottom: 36em;
 }
 
 body
@@ -72,15 +71,15 @@ nav {
     font-size: 0.8em;
     justify-content: space-between;
     align-items: center;
-    position: sticky; /*faz menu fixar no momento do scroll + top e left*/
-    top: 0px;
-    left: 0px;
-    gap:2em;
+    position: sticky;
+    top:0px;
+    left:0px; 
+    gap:10%;
 }
 
 nav a{
     display: flex;
-    gap:2em;
+    gap:10%;
 }
 
 .menu-links {
@@ -94,12 +93,60 @@ nav a{
 }
 
 
-p{ /*p do sobre mim*/
-    color:#ffffff;
-    font-size:1em;
-    text-align: justify;
-    padding-top: 1em;
+#titles{
+    font-size:2em;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
+
+#subtitles{
+    font-size:1em;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p{ /*textos*/
+    color:#ffffff;
+    font-size:0.8em;
+    text-align: justify;
+    text-justify:inter-word; /*tentar justificar texto à esquerda*/
+    padding-top: 1em;
+    width:38%;
+}
+
+ul{
+    list-style-type: none;
+    padding-top:1em;
+    display: flex;
+    gap:28px;
+    font-size:0.6em;
+    text-transform: uppercase;
+    width:38%;
+
+}
+
+li {
+    float: left;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 2px;
+
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#cv{
+    float: right;
+
+
+}
+
 
 h1{
     text-transform: uppercase;
@@ -207,7 +254,7 @@ footer a:hover img{
 
 
 .socialmedia {
-    padding:2em;
+    padding:3em;
     align-items: center;
     display:flex;
     flex-direction:column; /*organizar elementos verticalmente*/
@@ -215,20 +262,24 @@ footer a:hover img{
 
 .socialmedia p{
   text-transform: uppercase;
-  width: 10em;
+  width: 8em;
   height: 1em;
   text-align: center;
   margin:0.5em; /*margem entre caixas */
   align-items: center;
   justify-content: center;
 
-  border-width: 1.5px;
   border-color: #ffffff;
   border-style: solid;
-  border-radius: 30px;
-  padding: 25px;
+  border-radius: 50px;
+  border-width: 2px;
+
+  padding-bottom:10%;
+  padding-top:10%;
+  padding-left: 2%;
+  padding-right: 2%;
   
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .socialmedia p:hover{
@@ -237,14 +288,14 @@ footer a:hover img{
 }
 
 
-figure 
+main figure
 {
-  width: 30%;
-  height: 30%;
-  
-  float:left;
-  margin-top: 2%;
-  margin-left: 2%;
+  width: 40%;
+  margin-top: 5%;
+
+  float: left;
+
+
 
  /* border-width: 1px;
   border-color: rgb(255, 255, 255);
@@ -256,16 +307,6 @@ figure img
 {
   width: 100%;
   height: auto;
-}
-
-figcaption 
-{
-  /*visibility: hidden;*/
-  text-align: center;
-  padding-top: 1px;
-  font-family: "Archivo", sans-serif;
-  font-size:0.7em;
-  font-weight: bold;
 }
 
 
