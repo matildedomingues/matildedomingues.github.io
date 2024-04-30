@@ -24,7 +24,6 @@
 
 .capa-index{
     background-color: #000000;
-    /*background-image: url('projects/projeto1/imagens/capaindex.jpg');  Substitua pelo caminho correto da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a área disponível */
     background-position:top; /* Centraliza a imagem no cimo */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
@@ -33,7 +32,7 @@
 }
 
 .capa-about{
-    /* background-image: url('projects/projeto1/imagens/capaindex.jpg'); Substitua pelo caminho correto da sua imagem */
+   background-image: url('projects/projeto1/imagens/capa-about.png'); /*Substituir pelo caminho correto da sua imagem*/
     background-color: #000000;
     background-size: cover; /* Faz a imagem cobrir toda a área disponível */
     background-position:top; /* Centraliza a imagem no cimo */
@@ -62,6 +61,7 @@ body
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 
@@ -129,22 +129,40 @@ ul{
 }
 
 li {
-    float: left;
     border-color: #ffffff;
     border-style: solid;
     border-radius: 50px;
     border-width: 2px;
 
-    padding-bottom:1%;
-    padding-top:1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 1% 2%;
+
+    text-align: center;               /* Centraliza o texto dentro do elemento */
+    display: inline-block;            /* Torna o elemento um bloco inline para melhor controle */
+    width: auto;
 }
 
 #cv{
-    float: right;
+    text-transform: uppercase;
+    font-size: 0.6em;
 
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 2px;
+    
+    padding: 1% 2%;
 
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    display:inline-block; /* Usa flexbox */
+    position: absolute; /* Posicionamento absoluto */
+    right: 0; /* Alinha à direita */
+    margin-right: 5%; 
+    margin-top: 5%;
+    width: auto;  
+}
+
+#cv hover{
+    font-weight: bold;
 }
 
 
@@ -173,13 +191,6 @@ h3{
     text-align: left;
 }
 
-/* main p{
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding-top: 1em;
-    font-size: 76%;
-}
-*/
 
 a:link{
     color: #ffffff;
@@ -209,15 +220,12 @@ span{
     font-weight: 900; /*black*/
 }
 
-#sobremim, #projetos, #contactos{
+#projetos, #contactos{
     font-weight: bold;
     color:#ffffff;
     background-color: #000000;
 }
 
-/*section{
-    padding-right: 50%;
-}*/
 
 footer{
     width: 100vw;   
@@ -239,19 +247,20 @@ footer p{
 }
 
 footer img{
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     align-items: center;
     display: flex;
     
 }
 
 footer a:hover img{
-    /*opacity:1;*/ 
     background-color:#ffffff51;
     border-radius: 1.2em;
 }
 
+
+/*CONTACTOS*/
 
 .socialmedia {
     padding:3em;
@@ -288,30 +297,82 @@ footer a:hover img{
 }
 
 
-main figure
-{
-  width: 40%;
-  margin-top: 5%;
-
-  float: left;
-
-
-
- /* border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;*/
-  
+/*PROJETO 1*/
+.apresentacao-project video{
+    width:50%;
+    height:50%;
+    float:right;
+    padding-top: 5%;
 }
+
+#titles-project{
+    font-size:2em;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:10%;
+
+}
+
+.apresentacao-project{
+    width: 100%;
+    line-height: 1em;
+}
+
+main p{
+    line-height: 1.3em;
+}
+
+
+figure 
+{
+    width: 28%;
+    margin: 2%; /* Ajuste conforme necessário para espaçamento */
+}
+
 
 figure img 
 {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    display: block; /* Remove espaços extras abaixo das imagens */
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-top: 10%;
 }
 
 
+.producao{
+    width: 100%;
+    height:10%;
+    margin-top: 5%;
+}
 
-/* Responsive */
+.producao video{
+    width:40%;
+    height:40%;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:30%;
+    padding-right:30%;
+}
+
+.pre-producao{
+    width: 100%;
+    height:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.pre-producao img{
+    width:100%;
+}
+
+/* RESPONSIVE */
 
 @media only screen and (min-width: 600px) 
 {
