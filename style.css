@@ -32,7 +32,7 @@
 }
 
 .capa-about{
-   background-image: url('projects/projeto1/imagens/capa-about.png'); /*Substituir pelo caminho correto da sua imagem*/
+    background-image: url('projects/projeto1/imagens/capa-about.png'); /*Substituir pelo caminho correto da sua imagem*/
     background-color: #000000;
     background-size: cover; /* Faz a imagem cobrir toda a área disponível */
     background-position:top; /* Centraliza a imagem no cimo */
@@ -71,10 +71,8 @@ nav {
     font-size: 0.8em;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top:0px;
-    left:0px; 
-    gap:10%;
+    gap:10%; 
+  
 }
 
 nav a{
@@ -141,28 +139,37 @@ li {
     width: auto;
 }
 
-#cv{
-    text-transform: uppercase;
-    font-size: 0.6em;
 
-    border-color: #ffffff;
-    border-style: solid;
-    border-radius: 50px;
-    border-width: 2px;
-    
-    padding: 1% 2%;
+.button {
+    text-transform: uppercase; /* Deixa todas as letras maiúsculas */
+    font-size: 0.6em; /* Define o tamanho da fonte */
 
-    text-align: center; /* Centraliza o texto dentro do elemento */
-    display:inline-block; /* Usa flexbox */
-    position: absolute; /* Posicionamento absoluto */
-    right: 0; /* Alinha à direita */
-    margin-right: 5%; 
-    margin-top: 5%;
-    width: auto;  
+    border-color: #ffffff; /* Cor da borda */
+    border-style: solid; /* Estilo da borda */
+    border-radius: 50px; /* Arredonda as bordas */
+    border-width: 2px; /* Largura da borda */
+
+    padding: 1% 2%; /* Espaçamento interno no botão */
+
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Faz o link se comportar como um bloco, mas apenas ocupando o espaço necessário */
+    position: absolute; /* Posicionamento absoluto no layout */
+    right: 0; /* Posiciona à direita */
+    margin-right: 5%; /* Margem à direita */
+    margin-top: 5%; /* Margem superior */
+    width: auto; /* Largura automática baseada no conteúdo */
+  }
+  
+.button {
+    background-color: transparent;
+    color: #ffffff; 
+    border: 2px solid #ffffff;
 }
-
-#cv hover{
+  
+.button:hover {
+    background-color: #ffffff;
     font-weight: bold;
+    color: #000000;
 }
 
 
@@ -260,43 +267,6 @@ footer a:hover img{
 }
 
 
-/*CONTACTOS*/
-
-.socialmedia {
-    padding:3em;
-    align-items: center;
-    display:flex;
-    flex-direction:column; /*organizar elementos verticalmente*/
-}
-
-.socialmedia p{
-  text-transform: uppercase;
-  width: 8em;
-  height: 1em;
-  text-align: center;
-  margin:0.5em; /*margem entre caixas */
-  align-items: center;
-  justify-content: center;
-
-  border-color: #ffffff;
-  border-style: solid;
-  border-radius: 50px;
-  border-width: 2px;
-
-  padding-bottom:10%;
-  padding-top:10%;
-  padding-left: 2%;
-  padding-right: 2%;
-  
-  font-size: 0.8em;
-}
-
-.socialmedia p:hover{
-    background-color:#ffffff;
-    color:#000000;
-}
-
-
 /*PROJETO 1*/
 .apresentacao-project video{
     width:50%;
@@ -372,6 +342,102 @@ article{
     width:100%;
 }
 
+
+/* PROJETOS */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 0%;
+    padding-top: 5%;
+}
+  
+.grid-item {
+    display: flex;               /* flexbox */
+    align-items: center;         /* Alinha verticalmente no centro */
+    justify-content: center;     /* Alinha horizontalmente no centro */
+    padding: 20%;              
+    position: relative;          /* Para posicionamento de fundo e texto */
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item:hover{
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 1); /* Efeito de vinheta */
+}
+
+.grid-item p{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    white-space: nowrap; /* Impede que o texto quebre em novas linhas */
+    font-weight: 500;
+    padding: 0;
+
+    opacity: 0; /* Inicialmente o texto é invisível */
+    visibility: hidden; /* Inicialmente o texto não é visível */
+    transition: opacity 0.5s ease, visibility 0.5s; /* Transição suave para a visibilidade e opacidade */
+}
+
+.grid-item:hover p {
+    opacity: 1; /* Torna o texto visível ao passar o mouse */
+    visibility: visible; /* Torna o texto visível ao passar o mouse */
+}
+
+.item1 {
+    background-image: url("projects/projeto1/imagens/project2/capavideo-project2.jpg");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover;
+    background-position: center; 
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  
+.item2 {
+    background-image: url("projects/projeto1/imagens/project3/capa-project3.jpg");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover;
+    background-position: center; 
+    grid-column: 3;
+    grid-row: 1/ span 2;
+  }
+  
+.item3 {
+    background-image: url("projects/projeto1/imagens/project1/capa-project1.jpg");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover; 
+    background-position: top; 
+  }
+
+.item4 {
+    background-image: url("projects/projeto1/imagens/project2/capavideo-project2.jpg");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover;
+    background-position: top; 
+  }
+
+.item5 {
+    background-image: url("projects/projeto1/imagens/project4/capa4.png");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover;
+    background-position: top; 
+  }
+
+.item6 {
+    background-image: url("projects/projeto1/imagens/project2/capavideo-project2.jpg");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover;
+    background-position: top; 
+  }
+
+.item7 {
+    background-image: url("projects/projeto1/imagens/project1/capa-project1.jpg");
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
+    background-size: cover;
+    background-position: center; 
+  }
+
+
 /* RESPONSIVE */
 
 @media only screen and (min-width: 600px) 
@@ -411,3 +477,5 @@ article{
     width: 22.5%;
   }
 }
+
+
