@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  /*outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -443,13 +443,12 @@ article{
 {
     /*Geral*/
 
-    body{
+  /*  body{
         background-color: blue;
-    }
+    } */
     
     nav {
         flex-direction: column; 
-        width: 100vw;
     }
 
     .menu-links {
@@ -463,7 +462,7 @@ article{
 
     footer {
         height: auto;
-        width: 100vw;
+        margin-right: 5%;
     }
 
     .footer-socialmedia {
@@ -483,7 +482,7 @@ article{
     /*Index*/
     .capa-index { 
         width: 100%;  
-        background-color: blue;  
+       /* background-color: blue; */
     }
 
     #Video {
@@ -500,20 +499,20 @@ article{
     /*About Me*/    
     .capa-about { 
         width: 100%;
-        background-color: blue;
+       /* background-color: blue;*/
         background-image:none;         
         margin-bottom: 6em;
     }
 
     #titles{
         padding-top: 10%;
-        font-size: 1em;
+        font-size: 1.5em;
         width: 100%;
         text-align: center;
     }
 
     #subtitles{
-        font-size: 0.8em;
+        font-size: 1em;
         width: 100%;
         text-align: center;
     }
@@ -538,6 +537,69 @@ article{
         width: 80%; /* Define a largura dos elementos */
         text-align: center; /* Centraliza o texto */
         font-size: 0.6em;
+        margin-top: 5%;
     }
+
+
+    /*Projects
+    .capa-projects{
+        background-color: blue;
+    }
+    */
+    .grid-container {
+        grid-template-columns: 1; /* Define uma única coluna */
+    }
+
+    .grid-item {
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        text-align: center; /* Centraliza o texto dentro dos itens */
+    }
+
+    .grid-item p {
+        font-size: 0.4em;
+    }
+
+    /*Project Individual*/    
+    .apresentacao-project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao-project iframe {
+        order: 3; /* Define a ordem do iframe */
+        width: 100%;
+        height: 10em;
+    }
+
+    #titles-project {
+        order: 1; /* Define a ordem do título */
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #titles-project p{
+        font-size: 0.6em;
+    }
+
+    .apresentacao-project p:nth-of-type(2) {
+        order: 2; /* Define a ordem do parágrafo */
+        text-align: justify; /* Centraliza o texto */
+    }
+
+    .producao iframe{
+        width:90%;
+        height:10em;
+        padding-top: 0;
+        padding-bottom: 0%;
+        padding-left:5%;
+    }
+
+    .pre-producao{
+        margin-bottom: 20%;
+    }
+
 
 }
