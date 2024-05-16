@@ -101,7 +101,6 @@ nav a{
     gap:2em; /*Define um espaço de 2em entre cada elemento da flexbox */
 }
 
-
 #titles{
     font-size:2em; /*Define o tamanho da fonte*/
     font-family: "Archivo", sans-serif; /*Define o tipo de letra*/
@@ -194,14 +193,14 @@ h3{
     padding-top: 3em; /*Adiciona um padding no topo de 3em*/
 }
 
-#Matilde{
+#Video{
     font-size: 2.5em; /*Define o tamanho da fonte*/
     text-transform: uppercase; /* Define todas as letras em maiúsculas */
     font-weight: 400; /*Define a tipografia para regular*/
     text-align: left; /*Alinha o texto à esquerda*/
 }
 
-#Domingues{
+#Portfolio{
     font-size: 3.65em; /*Define o tamanho da fonte*/
     text-transform: uppercase; /* Define todas as letras em maiúsculas */
     font-weight: 900; /*Define a tipografia com um peso de 900 que equivale a black/bold*/
@@ -342,9 +341,9 @@ article{
     margin-top: 5%; /*Define uma margem superior de 5%*/
 }
 
-.producao video{
+.producao iframe{
     width:40%; /*Define a largura desta área*/
-    height:40%; /*Define a altura desta área*/
+    height:20vw; /*Define a altura desta área*/
     padding-top:5%; /*Define um padding superior de 5%*/
     padding-bottom:5%; /*Define um padding inferior de 5%*/
     padding-left:30%; /*Define um padding do lado esquerdo de 30%*/
@@ -446,40 +445,49 @@ article{
 
 @media only screen and (max-width: 600px) 
 {
-  figure 
-  {
-    width: 92%;
-  }
+    nav {
+        flex-direction: column; /* Altera a direção para coluna */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .menu-links {
+        margin-top: 7%; /* Adiciona margem acima do menu */
+    }
+
+    #logo {
+        font-size: 2em;
+        padding-top: 5%;
+        padding-left: 50%;
+        width: 100%;
+    }
+
+    #Video {
+        font-size:1.5em;
+        text-align: center;
+        padding-top:35%;
+    }
+
+    #Portfolio {
+        font-size:2.65em;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-socialmedia {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    footer a {
+        width: 1.2em;
+        height: 1.2em;
+        padding-bottom: 10%;
+    }
 }
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) 
-{
-  figure 
-  {
-    width: 47%;
-  }
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) 
-{
-  figure 
-  {
-    width: 30.5%;
-  }
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) 
-{
-  figure 
-  {
-    width: 22.5%;
-  }
-}
-
 
