@@ -120,7 +120,7 @@ p{ /*textos*/
     color:#ffffff; /*Define a cor da tipografia*/
     font-size:0.8em; /*Define o tamanho da fonte*/
     text-align: justify; /*Justifica o texto*/
-    text-justify:inter-word; /*tentar justificar texto à esquerda*/
+    text-justify:inter-word; /*ajusta espaço entre as palavras*/
     padding-top: 1em; /*Adiciona um padding no topo de 1em*/
     width:38%; /*Define a largura do espaço ocupado por estes <p>*/
 }
@@ -286,11 +286,11 @@ footer a
 
 
 /*PROJETO 1*/
-.apresentacao-project video{
-    width:50%; /*Define a largura do espaço ocupado pelo video*/
-    height:50%; /*Define a altura do espaço ocupado pelo video*/
-    float:right; /*Faz com que o video flutue para a direita*/
-    padding-top: 5%; /*Adiciona um padding no topo de 5%*/
+.apresentacao-project iframe {
+    width: 50vw; /* Define a largura do espaço ocupado pelo vídeo */
+    height: 25vw; /* Define a altura do espaço ocupado pelo vídeo */
+    float: right; /* Faz com que o vídeo flutue para a direita */
+    padding-top: 5%; /* Adiciona um padding no topo de 5% */
 }
 
 #titles-project{
@@ -302,13 +302,15 @@ footer a
 
 }
 
-.apresentacao-project{
-    width: 100%; /*Define a largura desta área*/
-    line-height: 1em; /*Define um espaçamento entre linhas de 1em*/
+.apresentacao-project {
+    width: 100%; /* Define a largura desta área */
+    line-height: 1em; /* Define um espaçamento entre linhas de 1em */
 }
 
 main p{
     line-height: 1.3em; /*Define um espaçamento entre linhas de 1.3em*/
+    text-align: justify; /*Justifica o texto*/
+    text-justify:inter-word; /*Ajusta o espaço entre as palavras*/
 }
 
 
@@ -398,7 +400,7 @@ article{
 }
 
 .grid-item:hover p {
-    opacity: 1; /* Torna o texto visível ao passar o mouse */
+    opacity: 1; /* Torna o texto visível ao passar o mouse com opacidade de 1*/
     visibility: visible; /* Torna o texto visível ao passar o mouse */
 }
 
