@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  /*outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -445,6 +445,7 @@ article{
     /*Geral*/
     nav {
         flex-direction: column; 
+        width: 100vw;
     }
 
     .menu-links {
@@ -470,16 +471,15 @@ article{
     }
 
     footer a {
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.8em;
+        height: 1.8em;
         padding-bottom: 10%;
     }
 
-    
-
     /*Index*/
     .capa-index { 
-        width: 100%;    
+        width: 100%;  
+        background-color: blue;  
     }
 
     #Video {
