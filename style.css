@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  /*outline: 1px dashed red;
-  outline-offset: -1px;*/
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -69,10 +69,7 @@ body
     font-family: "Archivo", sans-serif; /*Define a tipografia*/ 
     font-size:1.4em; /*Define o tamanho da fonte*/
     color:#ffffff; /*Define a cor do texto*/
-    padding-left: 4%; /*Adiciona um padding à esquerda de 4%*/
-    padding-right: 4%;  /*Adiciona um padding à direita de 4%*/
-    padding-top: 4%; /*Adiciona um padding no topo de 4%*/
-    padding-bottom: 4%; /*Adiciona um padding no fundo de 4%*/
+    padding: 4%; /*Adiciona um padding em toda a volta de 4%*/
 }
 
 
@@ -445,20 +442,44 @@ article{
 
 @media only screen and (max-width: 600px) 
 {
+    /*Geral*/
     nav {
-        flex-direction: column; /* Altera a direção para coluna */
-        align-items: center; /* Centraliza os itens verticalmente */
+        flex-direction: column; 
     }
 
     .menu-links {
-        margin-top: 7%; /* Adiciona margem acima do menu */
+        margin-top: 7%; 
     }
 
     #logo {
         font-size: 2em;
         padding-top: 5%;
-        padding-left: 50%;
-        width: 100%;
+    }
+
+    footer {
+        height: auto;
+        width: 100vw;
+    }
+
+    .footer-socialmedia {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        width: 100vw;        
+    }
+
+    footer a {
+        width: 1.2em;
+        height: 1.2em;
+        padding-bottom: 10%;
+    }
+
+    
+
+    /*Index*/
+    .capa-index { 
+        width: 100%;    
     }
 
     #Video {
@@ -472,22 +493,6 @@ article{
         text-align: center;
     }
 
-    footer {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .footer-socialmedia {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-    }
-
-    footer a {
-        width: 1.2em;
-        height: 1.2em;
-        padding-bottom: 10%;
-    }
 }
+    
 
