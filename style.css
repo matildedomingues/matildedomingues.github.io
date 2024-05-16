@@ -525,7 +525,7 @@ article{
     }
 
     #skills ul{
-        font-size:0.4em;
+        font-size:0.6em;
         display: flex;
         flex-direction: column;
         gap:2em;        
@@ -537,7 +537,7 @@ article{
     .button {
         width: 80%; /* Define a largura dos elementos */
         text-align: center; /* Centraliza o texto */
-        font-size: 0.4em;
+        font-size: 0.6em;
     }
 
 }
