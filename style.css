@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  /*outline: 1px dashed red;
-  outline-offset: -1px;*/
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -144,7 +144,6 @@ li {
     display: inline-block; /* Torna o elemento um bloco inline para melhor controlo */
     width: auto; /*Define a largura como automática*/
 }
-
 
 .button {
     text-transform: uppercase; /* Define todas as letras em maiúsculas */
@@ -443,6 +442,11 @@ article{
 @media only screen and (max-width: 600px) 
 {
     /*Geral*/
+
+    body{
+        background-color: blue;
+    }
+    
     nav {
         flex-direction: column; 
         width: 100vw;
@@ -493,6 +497,47 @@ article{
         text-align: center;
     }
 
-}
-    
+    /*About Me*/    
+    .capa-about { 
+        width: 100%;
+        background-color: blue;
+        background-image:none;         
+        margin-bottom: 6em;
+    }
 
+    #titles{
+        padding-top: 10%;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    #subtitles{
+        font-size: 0.8em;
+        width: 100%;
+        text-align: center;
+    }
+
+    p{
+        font-size: 0.6em;
+        width: 100%;
+        text-align: center;
+    }
+
+    #skills ul{
+        font-size:0.4em;
+        display: flex;
+        flex-direction: column;
+        gap:2em;        
+        justify-content: center; /* Alinha verticalmente ao centro */
+        align-items: center; /* Alinha horizontalmente ao centro */
+        padding-left: 31%;
+    }
+
+    .button {
+        width: 80%; /* Define a largura dos elementos */
+        text-align: center; /* Centraliza o texto */
+        font-size: 0.4em;
+    }
+
+}
