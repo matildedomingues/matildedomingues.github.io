@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  /*outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -369,14 +369,14 @@ article{
 }
   
 .grid-item {
-    display: flex; /*Define o modelo de flexbox*/
-    align-items: center; /*Alinha verticalmente no centro*/
-    justify-content: center; /*Alinha horizontalmente no centro*/
-    padding: 20%; /*Define um padding de 20% */            
-    position: relative; /*Para posicionamento de fundo e texto */
-    background-size: cover; /*A imagem preenche a caixa*/
-    background-position: center; /*Centraliza a imagem na caixa respetiva*/
-}
+    display: flex; /* Define o modelo de flexbox */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    padding: 20%; /* Define um padding de 20% */
+    position: relative; /* Para posicionamento de fundo e texto */
+    background-size: cover; /* A imagem preenche a caixa */
+    background-position: center; /* Centraliza a imagem na caixa respectiva */
+  }
 
 .grid-item:hover{
     box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 1); /* Efeito de vinheta */
@@ -444,10 +444,6 @@ article{
 {
     /*Geral*/
 
-  /*  body{
-        background-color: blue;
-    } */
-    
     nav {
         flex-direction: column; 
     }
@@ -543,24 +539,20 @@ article{
 
 
     /*Projects*/
-    .capa-projects{
+   /* .capa-projects{
         background-color: blue;
-    }
-
-    .grid-container {
-        grid-template-columns: 1; /* Define uma única coluna */
-        
-    }
-
-    .grid-item {
-        display: flex;
-        justify-content: center; /* Centraliza o conteúdo horizontalmente */
-        align-items: center; /* Centraliza o conteúdo verticalmente */
-        text-align: center; /* Centraliza o texto dentro dos itens */
-    }
+    }*/
 
     .grid-item p {
-        font-size: 0.4em;
+        font-size: 0.6em;
+    }
+
+    .item1{
+        grid-column: 1; /*Altera para apenas 1 coluna*/
+    }
+
+    .grid-container{
+        padding-bottom:4em;
     }
 
     /*Project Individual*/    
