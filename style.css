@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  /*outline: 1px dashed red;
-  outline-offset: -1px;*/
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -159,17 +159,13 @@ li {
     text-align: center; /* Centraliza o texto */
     display: inline-block; /* Faz o link se comportar como um bloco, mas apenas ocupando o espaço necessário */
     position: absolute; /* Posicionamento absoluto no layout */
-    right: 0; /* Posiciona à direita */
+    right: 0em; /* Posiciona à direita */
+    bottom: 8em; /*Posicionar o botão mais para cima*/
     margin-right: 5%; /* Margem à direita de 5%*/
     margin-top: 5%; /* Margem superior de 5% */
     width: auto; /* Largura automática */
   }
   
-.button {
-    background-color: transparent; /*Define a cor de fundo do botão para transparente*/
-    color: #ffffff; /*Define a cor da tipografia*/
-    border: 2px solid #ffffff; /*Define o tipo de borda, a espessura e a cor*/
-}
   
 .button:hover {
     background-color: #ffffff; /*Quando se passa com o rato por cima do botão, o botão fica branco*/
@@ -445,8 +441,17 @@ article{
 
 /* RESPONSIVE */
 
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) 
 {
+    main 
+      {
+        background-color: yellowgreen;
+      }
+
     /*Geral*/
     nav {
         flex-direction: column; 
@@ -489,7 +494,6 @@ article{
     #Video {
         font-size:1.5em;
         text-align: center;
-        padding-top:35%;
     }
 
     #Portfolio {
@@ -534,10 +538,12 @@ article{
     }
 
     .button {
-        width: 80%; /* Define a largura dos elementos */
-        text-align: center; /* Centraliza o texto */
+        width: 35%; /* Define a largura dos elementos */
         font-size: 0.6em;
         margin-top: 10%;
+        bottom:0;
+        right:25%;
+
     }
 
     #about{
@@ -596,107 +602,6 @@ article{
     .pre-producao{
         margin-bottom: 20%;
     }
-}
-
-
-@media only screen and (max-width: 768px) {
-    
-    /*Geral*/
-    nav {
-        flex-direction: column; 
-    }
-
-    .menu-links {
-        margin-top: 7%; 
-    }
-
-    #logo {
-        font-size: 2em;
-        padding-top: 5%;
-    }
-
-    footer {
-        height: auto;
-        margin-right: 5%;
-        padding-top:2em;
-    }
-
-    .footer-socialmedia {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-        width: 100vw;        
-    }
-
-    footer a {
-        width: 1.8em;
-        height: 1.8em;
-        padding-bottom: 10%;
-    }
-
-    /*Index*/
-    .capa-index { 
-        width: 92%;   
-    }
-
-    #Video {
-        font-size:1.5em;
-        text-align: center;
-        padding-top:20%;
-    }
-
-    #Portfolio {
-        font-size:2.65em;
-        text-align: center;
-    }
-
-/*About Me*/    
-.capa-about { 
-    width: 92%;
-    background-image:none;         
-    margin-bottom: 10em;
-}
-
-#titles{
-    padding-top: 10%;
-    font-size: 1.5em;
-    width: 100%;
-    text-align: center;
-}
-
-#subtitles{
-    font-size: 1em;
-    width: 100%;
-    text-align: center;
-}
-
-p{
-    font-size: 0.6em;
-    width: 100%;
-    text-align: center;
-}
-
-#skills ul{
-    font-size:0.6em;
-    display: flex;
-    flex-direction: column;
-    gap:2em;        
-    justify-content: center; /* Alinha verticalmente ao centro */
-    align-items: center; /* Alinha horizontalmente ao centro */
-    padding-left: 31%;
-}
-
-.button {
-    width: 80%; /* Define a largura dos elementos */
-    text-align: center; /* Centraliza o texto */
-    font-size: 0.6em;
-    margin-top: 10%;
-}
-
-#about{
-    background-color: #000000;
-    padding-top: 2em;
-}
 
 }
+
