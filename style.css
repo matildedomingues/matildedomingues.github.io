@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  /*outline: 1px dashed red;
-  outline-offset: -1px;*/
+  outline: 1px dashed red;
+  outline-offset: -1px;
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -242,7 +242,7 @@ span{
 /*FOOTER*/
 
 footer{
-    width: 100%; /*Define a largura do footer*/
+    width:92%;
     height: 4em; /*Define a altura do footer*/
     display: flex; /*Aplica o modelo de flexbox*/
     align-items: center; /* Centraliza os elementos verticalmente */
@@ -289,11 +289,12 @@ footer a
 }
 
 #titles-project{
-    font-size:2em; /*Define o tamanho da fonte*/
+    font-size:2em; /*Define o tamanho da fonte*/    
     font-family: "Archivo", sans-serif; /*Define o tipo de letra*/
     text-transform: uppercase; /*Torna todas as letras em maiusculas*/
     font-weight: bold; /*A tipografia fica a bold*/
     padding-top:10%; /*Adiciona um padding no topo de 10%*/
+    text-align: left; /*Alinha texto à esquerda*/
 
 }
 
@@ -537,17 +538,18 @@ article{
         width: 80%; /* Define a largura dos elementos */
         text-align: center; /* Centraliza o texto */
         font-size: 0.6em;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
 
-    /*Projects
+    /*Projects*/
     .capa-projects{
         background-color: blue;
     }
-    */
+
     .grid-container {
         grid-template-columns: 1; /* Define uma única coluna */
+        
     }
 
     .grid-item {
@@ -590,11 +592,9 @@ article{
     }
 
     .producao iframe{
-        width:90%;
-        height:10em;
-        padding-top: 0;
-        padding-bottom: 0%;
-        padding-left:5%;
+        width: 100%;
+        height:12em;
+        padding: 0;
     }
 
     .pre-producao{
