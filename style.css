@@ -18,8 +18,8 @@
 
 * /*seletor geral*/
 {
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  /*outline: 1px dashed red;
+  outline-offset: -1px;*/
   margin:  0; /* Remove a margem padrão */
   padding: 0; /* Remove os padding padrão */
 }
@@ -148,7 +148,6 @@ li {
 .button {
     text-transform: uppercase; /* Define todas as letras em maiúsculas */
 
-    background-color: #000000;
     border-color: #ffffff; /* Cor da borda */
     border-style: solid; /* Estilo da borda */
     border-radius: 50px; /* Arredonda as bordas */
@@ -159,6 +158,9 @@ li {
     text-align: center; /* Centraliza o texto */
     display: inline-block; /* Faz o link se comportar como um bloco, mas apenas ocupando o espaço necessário */
     
+    font-size:0.6em;
+    position: relative;
+    left:86%;
   }
 
 
@@ -436,21 +438,290 @@ article{
 
 /* RESPONSIVE */
 
+@media only screen and (max-width: 1500px) 
+{
+    main
+    {
+        background-color: brown;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+    /*About me*/
+    .capa-about{
+        margin-bottom: 4%;
+    }
+    #about{
+        background-color: #000000;
+        width: 100%;
+    }
+
+    p{
+        font-size:0.8em;
+    }
+
+    #titles{
+        font-size: 1.7em;
+    }
+
+    #subtitles{
+        font-size: 1.2em;
+    }
+
+    #skills ul{
+        font-size:0.6em;
+        gap:1em;     
+        align-items: center;
+    }
+
+    .button {
+        width: 15%; /* Define a largura dos elementos */
+        font-size: 0.6em;
+        position:relative;
+        left:80%; 
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) 
+{
+    main
+    {
+        background-color: lightsalmon;
+    }
+    
+    /*About me*/
+    #about{
+        background-color: #000000;
+        width: 100%;
+    }
+    
+    p{
+        font-size:0.7em;
+    }
+
+    #titles{
+        font-size: 1.6em;
+    }
+
+    #subtitles{
+        font-size: 1.1em;
+    }
+
+    #skills ul{
+        font-size:0.5em;
+        gap:1em;     
+        align-items: center;
+    }
+
+    .button {
+        width: 15%; /* Define a largura dos elementos */
+        font-size: 0.5em;
+        position:relative;
+        left:80%; 
+    }
+
+    /*Project Individual*/    
+    .apresentacao-project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao-project iframe {
+        order: 3; /* Define a ordem do iframe */
+        width: 100%;
+        height: 15em;
+    }
+
+    #titles-project {
+        order: 1; /* Define a ordem do título */
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    #titles-project p{
+        font-size: 0.6em;
+    }
+
+    .apresentacao-project p {
+        order: 2; /* Define a ordem do parágrafo */
+        text-align: justify; /* Centraliza o texto */
+        width:100%;
+        font-size: 0.7em;
+    }
+
+    .producao iframe{
+        width: 100%;
+        height:18em;
+        padding: 0;
+    }
+
+    .pre-producao{
+        margin-bottom: 15%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) 
+{
+    /*main
+    {
+        background-color: lightcoral;
+    }*/
+
+    /*About me*/
+    #about{
+        background-color: #000000;
+        width: 100%;
+    }
+    
+    p{
+        font-size:0.6em;
+    }
+
+    #titles{
+        font-size: 1.5em;
+    }
+
+    #subtitles{
+        font-size: 1em;
+    }
+
+    #skills ul{
+        font-size:0.4em;
+        gap:1em;     
+        align-items: center;
+    }
+
+    .button {
+        width: 15%; /* Define a largura dos elementos */
+        font-size: 0.5em;
+        margin-top: 10%;
+        position:relative;
+        left:80%; 
+    }
+
+    /*Projects*/    
+    .grid-item p {
+        font-size: 0.6em;
+    }
+
+    .item1{
+        grid-column: 2; /*Altera para apenas 1 coluna*/
+    }
+
+    .grid-container{
+        padding-bottom:4em;
+        gap:15px;
+    }
+
+    /*Project Individual*/    
+    .apresentacao-project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao-project iframe {
+        order: 3; /* Define a ordem do iframe */
+        width: 100%;
+        height: 15em;
+    }
+
+    #titles-project {
+        order: 1; /* Define a ordem do título */
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    #titles-project p{
+        font-size: 0.6em;
+    }
+
+    .apresentacao-project p {
+        order: 2; /* Define a ordem do parágrafo */
+        text-align: justify; /* Centraliza o texto */
+        width:100%;
+        font-size: 0.6em;
+    }
+
+    .producao iframe{
+        width: 100%;
+        height:18em;
+        padding: 0;
+    }
+
+    .pre-producao{
+        margin-bottom: 15%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) 
 {
-    main 
+   /* main 
       {
         background-color: rgb(111, 192, 219);
-      }
+      }*/
+
+    /*Geral*/
+    nav {
+        flex-direction: column; 
+    }
+
+    .menu-links {
+        margin-top: 7%; 
+    }
+
+    #logo {
+        font-size: 2em;
+        padding-top: 5%;
+    }
+
+    footer {
+        height: auto;
+        margin-right: 5%;
+        padding-top:2em;
+    }
+
+    .footer-socialmedia {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        width: 100vw;        
+    }
+
+    footer a {
+        width: 1.8em;
+        height: 1.8em;
+        padding-bottom: 10%;
+    }
+
+    /*Index*/
+    .capa-index { 
+        width: 92%;   
+    }
+
+    #Video {
+        font-size:1.5em;
+        text-align: center;
+    }
+
+    #Portfolio {
+        font-size:2.65em;
+        text-align: center;
+    }
 
 
     /*About Me*/    
     .capa-about { 
         width: 92%;
         background-image:none;         
-        margin-bottom: 10em;
+        margin-bottom: 8em;
     }
 
     #titles{
@@ -496,7 +767,19 @@ article{
     }
 
 
+    /*Projects*/    
+    .grid-item p {
+        font-size: 0.6em;
+    }
 
+    .item1{
+        grid-column: 2; /*Altera para apenas 1 coluna*/
+    }
+
+    .grid-container{
+        padding-bottom:7em;
+        gap:20px;
+    }
 
 
       /*Project Individual*/    
@@ -514,7 +797,7 @@ article{
 
     #titles-project {
         order: 1; /* Define a ordem do título */
-        font-size: 1.5em;
+        font-size: 1.6em;
         text-align: center;
     }
 
@@ -544,10 +827,10 @@ article{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) 
 {
-    main 
+    /*main 
       {
         background-color: yellowgreen;
-      }
+      }*/
 
     /*Geral*/
     nav {
