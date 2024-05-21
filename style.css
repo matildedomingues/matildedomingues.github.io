@@ -265,6 +265,10 @@ footer a
     background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
+#about{
+    background-color: transparent;
+}
+
 .email:link { background-image: url("projects/projeto1/imagens/logoemail.png"); } /*Define o icone que aparece no link normalmente*/
 .email:hover { background-image: url("projects/projeto1/imagens/email-invers.png"); } /*Define o icone que aparece quando se passa o rato por cima do link*/
 
@@ -444,7 +448,6 @@ article{
 @media only screen and (max-width: 600px) 
 {
     /*Geral*/
-
     nav {
         flex-direction: column; 
     }
@@ -480,8 +483,7 @@ article{
 
     /*Index*/
     .capa-index { 
-        width: 92%;  
-       /* background-color: blue; */
+        width: 92%;   
     }
 
     #Video {
@@ -594,6 +596,107 @@ article{
     .pre-producao{
         margin-bottom: 20%;
     }
+}
 
+
+@media only screen and (max-width: 768px) {
+    
+    /*Geral*/
+    nav {
+        flex-direction: column; 
+    }
+
+    .menu-links {
+        margin-top: 7%; 
+    }
+
+    #logo {
+        font-size: 2em;
+        padding-top: 5%;
+    }
+
+    footer {
+        height: auto;
+        margin-right: 5%;
+        padding-top:2em;
+    }
+
+    .footer-socialmedia {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        width: 100vw;        
+    }
+
+    footer a {
+        width: 1.8em;
+        height: 1.8em;
+        padding-bottom: 10%;
+    }
+
+    /*Index*/
+    .capa-index { 
+        width: 92%;   
+    }
+
+    #Video {
+        font-size:1.5em;
+        text-align: center;
+        padding-top:20%;
+    }
+
+    #Portfolio {
+        font-size:2.65em;
+        text-align: center;
+    }
+
+/*About Me*/    
+.capa-about { 
+    width: 92%;
+    background-image:none;         
+    margin-bottom: 10em;
+}
+
+#titles{
+    padding-top: 10%;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+#subtitles{
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+}
+
+#skills ul{
+    font-size:0.6em;
+    display: flex;
+    flex-direction: column;
+    gap:2em;        
+    justify-content: center; /* Alinha verticalmente ao centro */
+    align-items: center; /* Alinha horizontalmente ao centro */
+    padding-left: 31%;
+}
+
+.button {
+    width: 80%; /* Define a largura dos elementos */
+    text-align: center; /* Centraliza o texto */
+    font-size: 0.6em;
+    margin-top: 10%;
+}
+
+#about{
+    background-color: #000000;
+    padding-top: 2em;
+}
 
 }
