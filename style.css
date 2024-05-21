@@ -248,6 +248,7 @@ footer{
     align-items: center; /* Centraliza os elementos verticalmente */
     position:fixed;  /*Fixa a posição do footer*/
     bottom: 0; /*Fixa o footer ao fundo do ecrã*/
+    background-color: #000000; /*Define a cor de fundo do footer*/
 }
 
 .footer-socialmedia{
@@ -460,6 +461,7 @@ article{
     footer {
         height: auto;
         margin-right: 5%;
+        padding-top:2em;
     }
 
     .footer-socialmedia {
@@ -478,7 +480,7 @@ article{
 
     /*Index*/
     .capa-index { 
-        width: 100%;  
+        width: 92%;  
        /* background-color: blue; */
     }
 
@@ -495,10 +497,9 @@ article{
 
     /*About Me*/    
     .capa-about { 
-        width: 100%;
-       /* background-color: blue;*/
+        width: 92%;
         background-image:none;         
-        margin-bottom: 6em;
+        margin-bottom: 10em;
     }
 
     #titles{
@@ -537,12 +538,12 @@ article{
         margin-top: 10%;
     }
 
+    #about{
+        background-color: #000000;
+        padding-top: 2em;
+    }
 
-    /*Projects*/
-   /* .capa-projects{
-        background-color: blue;
-    }*/
-
+    /*Projects*/    
     .grid-item p {
         font-size: 0.6em;
     }
@@ -552,7 +553,8 @@ article{
     }
 
     .grid-container{
-        padding-bottom:4em;
+        padding-bottom:7em;
+        gap:40px;
     }
 
     /*Project Individual*/    
