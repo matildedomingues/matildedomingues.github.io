@@ -8,7 +8,7 @@
     Curso: DGM
     ESAD.CR
     Docente: Marco Heleno
-    04 Junho 2024
+    31 de Maio 2024
 */
 
 
@@ -438,87 +438,86 @@ article{
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 1500px) 
+@media only screen and (max-width: 1500px) /*Tornar responsive para dispositivos com largura máxima de 1500px*/
 {
-    main
+   /* main
     {
         background-color: brown;
-    }
+    } */
 
     /*About me*/
     .capa-about{
-        margin-bottom: 4%;
+        margin-bottom: 4%; /*Define uma margem no fundo*/
     }
     #about{
-        background-color: #000000;
-        width: 100%;
+        background-color: #000000; /*Define a cor de fundo do footer*/
+        width: 100%; /*Define o tamanho da largura do footer*/
     }
 
     p{
-        font-size:0.8em;
+        font-size:0.8em; /*Define o tamanho da fonte*/
     }
 
     #titles{
-        font-size: 1.7em;
+        font-size: 1.7em; /*Define o tamanho da fonte*/
     }
 
     #subtitles{
-        font-size: 1.2em;
+        font-size: 1.2em; /*Define o tamanho da fonte*/
     }
 
     #skills ul{
-        font-size:0.6em;
-        gap:1em;     
-        align-items: center;
+        font-size:0.6em; /*Define o tamanho da fonte*/
+        gap:1em; /*Define o espaço entre os elementos*/    
+        align-items: center; /*Alinhar os elementos ao centro horizontalmente*/
     }
 
     .button {
         width: 15%; /* Define a largura dos elementos */
-        font-size: 0.6em;
-        position:relative;
-        left:80%; 
+        font-size: 0.6em; /*Define o tamanho da fonte*/
+        position:relative; /*Define o tipo de posição do botão*/
+        left:80%; /*Posiciona o botão mais à direita da página*/
     }
 }
 
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) 
+@media only screen and (max-width: 1200px) /*Tornar responsive para dispositivos com largura máxima de 1200px*/
 {
-    main
+    /*main
     {
         background-color: lightsalmon;
-    }
+    }*/
     
     /*About me*/
     #about{
-        background-color: #000000;
-        width: 100%;
+        background-color: #000000; /*define a cor de fundo do footer*/
+        width: 100%; /*Define a largura do footer*/
     }
     
     p{
-        font-size:0.7em;
+        font-size:0.7em; /*Define o tamanho da fonte*/
     }
 
     #titles{
-        font-size: 1.6em;
+        font-size: 1.6em; /*Define o tamanho da fonte*/
     }
 
     #subtitles{
-        font-size: 1.1em;
+        font-size: 1.1em; /*Define o tamanho da fonte*/
     }
 
     #skills ul{
-        font-size:0.5em;
-        gap:1em;     
-        align-items: center;
+        font-size:0.5em; /*Define o tamanho da fonte*/
+        gap:1em; /*Define o espaço entre os elementos*/
+        align-items: center; /*Alinha os elementos ao centro horizontalmente*/
     }
 
     .button {
         width: 15%; /* Define a largura dos elementos */
-        font-size: 0.5em;
-        position:relative;
-        left:80%; 
+        font-size: 0.5em; /*Define o tamanho da fonte*/
+        position:relative; /*Define o tipo de posição dos elementos*/
+        left:80%; /*Posiciona o botão mais à direita da página*/
     }
 
     /*Project Individual*/    
@@ -564,7 +563,7 @@ article{
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) 
+@media only screen and (max-width: 992px) /*Tornar responsive para dispositivos com largura máxima de 992px*/
 {
     /*main
     {
@@ -660,7 +659,7 @@ article{
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) 
+@media only screen and (max-width: 768px) /*Tornar responsive para dispositivos com largura máxima de 768px*/
 {
    /* main 
       {
@@ -825,7 +824,7 @@ article{
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 600px) /*Tornar responsive para dispositivos com largura máxima de 600px*/
 {
     /*main 
       {
@@ -885,7 +884,7 @@ article{
     .capa-about { 
         width: 92%;
         background-image:none;         
-        margin-bottom: 10em;
+        margin-bottom: 6em;
     }
 
     #titles{
