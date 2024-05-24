@@ -24,6 +24,7 @@
   padding: 0; /* Remove os padding padrão */
 }
 
+
 #logo{
     color:#ffffff; /*Define a cor branca para a tipografia do 'logo'*/
     text-decoration: none; /*Remove qualquer decoração de texto*/
@@ -34,11 +35,27 @@
     float: left; /*Faz com que o elemento flutue à esquerda do seu conteiner*/  
 }
 
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
 .capa-index{ 
-    background-color: #000000; /*Define cor de fundo a preto */
-    background-size: cover; /* Faz a imagem preencher toda a área disponível */
-    background-position:top; /* Centraliza a imagem no topo do ecrã */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
     min-height: 100%; /* Garante que o corpo tenha pelo menos a altura da janela */
     margin: 0; /* Remove a margem padrão */
 }
@@ -255,16 +272,18 @@ footer{
 
 footer a 
 {
-    display: flex; /*Aplica o modelo de flexbox*/
+
     width: 1.5em; /*Define a largura de cada espaço do link pro icone*/
     height: 1.5em; /*Define a altura de cada espaço do link pro icone*/
     background-size: contain; /* Garante que a imagem preencha todo o espaço do link */
     background-repeat: no-repeat; /* Evita repetição da imagem */
+    
 }
 
-#about{
+#about, #index{
     background-color: transparent;
 }
+
 
 .email:link { background-image: url("projects/projeto1/imagens/logoemail.png"); } /*Define o icone que aparece no link normalmente*/
 .email:hover { background-image: url("projects/projeto1/imagens/email-invers.png"); } /*Define o icone que aparece quando se passa o rato por cima do link*/
@@ -448,6 +467,11 @@ article{
     {
         background-color: brown;
     } */
+    
+    /*Index*/
+    .capa-index{
+        background-size:auto;
+    }
 
     /*About me*/
     .capa-about{
@@ -492,6 +516,10 @@ article{
     {
         background-color: lightsalmon;
     }*/
+
+    .capa-index{
+        background-size:auto;
+    }
     
     /*About me*/
     #about{
@@ -573,6 +601,10 @@ article{
     {
         background-color: lightcoral;
     }*/
+
+    .capa-index{
+        background-size:auto;
+    }
 
     /*About me*/
     #about{
@@ -707,6 +739,7 @@ article{
     /*Index*/
     .capa-index { 
         width: 92%;   
+        background-size:auto;
     }
 
     #Video {
@@ -876,7 +909,8 @@ article{
 
     /*Index*/
     .capa-index { 
-        width: 92%;   
+        width: 92%;  
+        background-size:auto;
     }
 
     #Video {
