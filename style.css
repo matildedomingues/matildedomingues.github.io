@@ -77,7 +77,7 @@
     padding-left: 4%; /*Adiciona um padding à esquerda de 4%*/
     padding-right: 4%;  /*Adiciona um padding à direita de 4%*/
     padding-top: 4%; /*Adiciona um padding no topo de 4%*/
-    padding-bottom: 6%; /*Adiciona um padding no fundo de 4%*/
+    padding-bottom: 8%; /*Adiciona um padding no fundo de 4%*/
 }
 
 .capa-projeto4{
@@ -343,6 +343,7 @@ figure img
     width: 100%; /*Define a largura da imagem para aparecer*/
     display: block; /* Remove espaços extras abaixo das imagens */
 }
+
 
 article{
     display: flex; /* Define o modelo de flexbox*/
