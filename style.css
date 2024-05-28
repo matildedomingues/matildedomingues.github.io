@@ -12,8 +12,8 @@
 */
 
 
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"); /*importar tipo de letra*/
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); /*importar tipo de letra*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"); /*importar tipo de letra do google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); /*importar tipo de letra do google fonts*/
 
 
 * /*seletor geral*/
@@ -36,23 +36,23 @@
 }
 
 .video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    position: fixed; /*Define o tipo de posição*/
+    top: 0; /*Define que este elemento se posicione no 0 em relação ao topo*/
+    left: 0; /*Define que este elemento se posicione no 0 em relação à esquerda*/
+    width: 100%; /*Define a largura do elemento a 100%*/
+    height: 100%; /*Define a altura do elemento a 100%*/
+    overflow: hidden; /*Faz com que qualquer parte do conteúdo ultrapasse a área delimitada, não seja visível*/
+    z-index: -1; /*Faz com que este elemento fique por detrás dos outros elementos*/
 }
 
 .background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
+    position: absolute; /*Define o tipo de posição*/
+    top: 50%; /*Define que este elemento se posicione a 50% a partir do topo*/
+    left: 50%; /*Define que este elemento se posicione a 50% a partir da esquerda*/
+    width: 100%; /*Define a largura do elemento a 100% */
+    height: 100%; /*Define a altura do elemento a 100% */
+    object-fit: cover; /*Faz com que este elemento se ajuste à outra div */
+    transform: translate(-50%, -50%); /*Serve para centralizar o elemento */
 }
 
 .capa-index{ 
@@ -81,7 +81,7 @@
 }
 
 .capa-projeto4{
-    margin-bottom: 4%;
+    margin-bottom: 4%; /*Define a margem inferior de 4% */
 }
 
 body
@@ -179,9 +179,9 @@ li {
     text-align: center; /* Centraliza o texto */
     display: inline-block; /* Faz o link se comportar como um bloco, mas apenas ocupando o espaço necessário */
     
-    font-size:0.6em;
-    position: relative;
-    left:86%;
+    font-size:0.6em; /*Define o tamanho da fonte */
+    position: relative; /*Define o tipo de posição*/
+    left:86%; /*Define a posição quantitivamente mais específica, colocando o elemento no exato local que eu quero*/
   }
 
 
@@ -281,7 +281,7 @@ footer a
 }
 
 #about, #index{
-    background-color: transparent;
+    background-color: transparent; /*Define o footer com fundo transparente */
 }
 
 
@@ -471,7 +471,7 @@ article{
     
     /*Index*/
     .capa-index{
-        background-size:auto;
+        background-size:auto; /*Define o background para automático podendo-se ajustar automaticamente */
     }
 
     /*About me*/
@@ -519,7 +519,7 @@ article{
     }*/
 
     .capa-index{
-        background-size:auto;
+        background-size:auto; /*Define o background para automático podendo-se ajustar automaticamente */
     }
     
     /*About me*/
@@ -555,42 +555,42 @@ article{
 
     /*Project Individual*/    
     .apresentacao-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /*Define a disposição dos elementos*/
+        flex-direction: column; /*Faz com que apareça em coluna*/
+        align-items: center; /*Alinha os elementos ao centro horizontalmente*/
     }
 
     .apresentacao-project iframe {
-        order: 3; /* Define a ordem do iframe */
-        width: 100%;
-        height: 15em;
+        order: 3; /* Define que este iframe apareça em terceiro lugar */
+        width: 100%; /*Define a largura do elemento a 100%*/
+        height: 15em; /*Define a altura do elemento a 15em*/
     }
 
     #titles-project {
-        order: 1; /* Define a ordem do título */
-        font-size: 1.8em;
-        text-align: center;
+        order: 1; /* Define que este elemento apareça em primeiro lugar */
+        font-size: 1.8em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #titles-project p{
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .apresentacao-project p {
         order: 2; /* Define a ordem do parágrafo */
         text-align: justify; /* Centraliza o texto */
-        width:100%;
-        font-size: 0.7em;
+        width:100%; /*Define o espaço que este elemento deve ocupar*/
+        font-size: 0.7em; /*Define o tamanho da fonte*/
     }
 
     .producao iframe{
-        width: 100%;
-        height:18em;
-        padding: 0;
+        width: 100%; /*Define a largura que o iframe deve ocupar*/
+        height:18em; /*Define a altura que o iframe deve ocupar*/
+        padding: 0; /*Retira todos os padding que possa ter*/
     }
 
     .pre-producao{
-        margin-bottom: 15%;
+        margin-bottom: 15%; /*Define a margem inferior desta área*/
     }
 }
 
@@ -604,44 +604,44 @@ article{
     }*/
 
     .capa-index{
-        background-size:auto;
+        background-size:auto; /*Define o background para automático podendo-se ajustar automaticamente */
     }
 
     /*About me*/
     #about{
-        background-color: #000000;
-        width: 100%;
+        background-color: #000000; /*Define a cor de fundo do footer*/
+        width: 100%; /*Define a largura do footer*/
     }
     
     p{
-        font-size:0.6em;
+        font-size:0.6em; /*Define o tamanho da fonte*/
     }
 
     #titles{
-        font-size: 1.5em;
+        font-size: 1.5em;  /*Define o tamanho da fonte*/
     }
 
     #subtitles{
-        font-size: 1em;
+        font-size: 1em;  /*Define o tamanho da fonte*/
     }
 
     #skills ul{
-        font-size:0.4em;
-        gap:1em;     
-        align-items: center;
+        font-size:0.4em; /*Define o tamanho da fonte*/
+        gap:1em; /*Define o espaço entre os elementos das listas*/ 
+        align-items: center; /*Alinha os elementos horizontalmente*/
     }
 
     .button {
         width: 15%; /* Define a largura dos elementos */
-        font-size: 0.5em;
-        margin-top: 10%;
-        position:relative;
-        left:80%; 
+        font-size: 0.5em; /*Define o tamanho da fonte*/
+        margin-top: 10%; /*Define a margem superior*/
+        position:relative; /*Define o tipo de posição deste elemento*/
+        left:80%; /*Posiciona o botão mais à direita da página*/
     }
 
     /*Projects*/    
     .grid-item p {
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .item1{
@@ -649,48 +649,48 @@ article{
     }
 
     .grid-container{
-        padding-bottom:4em;
-        gap:15px;
+        padding-bottom:4em; /*Define o padding inferior de 4em*/
+        gap:15px; /*Define o espaço entre cada caixa da grid*/
     }
 
     /*Project Individual*/    
     .apresentacao-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /*Define a disposição dos elementos*/
+        flex-direction: column; /*Faz com que apareça em coluna*/
+        align-items: center; /*Alinha os elementos ao centro horizontalmente*/
     }
 
     .apresentacao-project iframe {
         order: 3; /* Define a ordem do iframe */
-        width: 100%;
-        height: 15em;
+        width: 100%; /* Define a largura dos elemento */
+        height: 15em; /* Define a altura dos elemento */
     }
 
     #titles-project {
         order: 1; /* Define a ordem do título */
-        font-size: 1.7em;
+        font-size: 1.7em; /*Define o tamanho da fonte*/
         text-align: center;
     }
 
     #titles-project p{
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .apresentacao-project p {
         order: 2; /* Define a ordem do parágrafo */
         text-align: justify; /* Centraliza o texto */
-        width:100%;
-        font-size: 0.6em;
+        width:100%; /* Define a largura dos elementos */
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .producao iframe{
-        width: 100%;
-        height:18em;
-        padding: 0;
+        width: 100%; /* Define a largura dos elementos */
+        height:18em; /* Define a altura dos elementos */
+        padding: 0; /*Retira todos os padding que possa ter*/
     }
 
     .pre-producao{
-        margin-bottom: 15%;
+        margin-bottom: 15%; /*Define a margem inferior de 15% */
     }
 }
 
@@ -705,109 +705,109 @@ article{
 
     /*Geral*/
     nav {
-        flex-direction: column; 
+        flex-direction: column; /*Coloca os elementos em coluna*/
     }
 
     .menu-links {
-        margin-top: 7%; 
+        margin-top: 7%; /*Define a margem superior de 7% */
     }
 
     #logo {
-        font-size: 2em;
-        padding-top: 5%;
+        font-size: 2em; /*Define o tamanho da fonte*/
+        padding-top: 5%; /*Define o padding superior */
     }
 
     footer {
-        height: auto;
-        margin-right: 5%;
-        padding-top:2em;
+        height: auto; /*Define que a altura fica automática*/
+        margin-right: 5%; /*Define a margem direita*/
+        padding-top:2em; /*Define o padding superior*/
     }
 
     .footer-socialmedia {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-        width: 100vw;        
+        flex-direction: row; /*Coloca os elementos em linha*/
+        flex-wrap: wrap; /*Devem ser dispostos em várias linhas caso necessário*/
+        justify-content: center; /*Justificar os elementos ao centro*/
+        gap: 1em; /*Define o espaço entre eles*/
+        width: 100vw; /*Define a largura ocupada pelos elementos*/        
     }
 
     footer a {
-        width: 1.8em;
-        height: 1.8em;
-        padding-bottom: 10%;
+        width: 1.8em; /*Define a largura do a*/
+        height: 1.8em; /*Define a altura do a*/
+        padding-bottom: 10%; /*Define o padding inferior*/
     }
 
     /*Index*/
     .capa-index { 
-        width: 92%;   
-        background-size:auto;
+        width: 92%; /*Define a largura*/
+        background-size:auto; /*Faz com que o fundo fique automático*/
     }
 
     #Video {
-        font-size:1.5em;
-        text-align: center;
+        font-size:1.5em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #Portfolio {
-        font-size:2.65em;
-        text-align: center;
+        font-size:2.65em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
 
     /*About Me*/    
     .capa-about { 
-        width: 92%;
-        background-image:none;         
-        margin-bottom: 8em;
+        width: 92%; /*Define a largura*/
+        background-image:none; /*Retira a imagem de fundo*/ 
+        margin-bottom: 8em; /*Define a margem inferior*/
     }
 
     #titles{
-        padding-top: 10%;
-        font-size: 1.5em;
-        width: 100%;
-        text-align: center;
+        padding-top: 10%; /*Define o padding superior*/
+        font-size: 1.5em; /*Define o tamanho da fonte*/
+        width: 100%; /*Define a largura*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #subtitles{
-        font-size: 1em;
-        width: 100%;
-        text-align: center;
+        font-size: 1em; /*Define o tamanho da fonte*/
+        width: 100%; /*Define a largura*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     p{
-        font-size: 0.6em;
-        width: 100%;
-        text-align: center;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
+        width: 100%; /*Define a largura*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #skills ul{
-        font-size:0.6em;
-        display: flex;
-        flex-direction: column;
-        gap:2em;        
+        font-size:0.6em; /*Define o tamanho da fonte*/
+        display: flex; /*Define a disposição dos elementos*/
+        flex-direction: column; /*Coloca os elementos em coluna*/
+        gap:2em; /*Define o espaço entre os elementos*/
         justify-content: center; /* Alinha verticalmente ao centro */
         align-items: center; /* Alinha horizontalmente ao centro */
-        padding-left: 31%;
+        padding-left: 31%; /*Define o padding do lado esquerdo*/
     }
 
     .button {
         width: 35%; /* Define a largura dos elementos */
-        font-size: 0.6em;
-        margin-top: 10%;
-        position:relative;
-        left:30%; 
+        font-size: 0.6em; /*Define o tamanho da fonte*/
+        margin-top: 10%; /*Define a margem superior*/
+        position:relative; /*Define o tipo de posição*/
+        left:30%; /*Posiciona o elemento exatamente onde quero, a partir do lado esquerdo*/
     }
 
     #about{
-        background-color: #000000;
-        padding-top: 2em;
-        width: 92%;
+        background-color: #000000; /*Define a cor de fundo do footer*/
+        padding-top: 2em; /*Define o padding superior*/
+        width: 92%; /*Define a largura do footer*/
     }
 
 
     /*Projects*/    
     .grid-item p {
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .item1{
@@ -815,53 +815,53 @@ article{
     }
 
     .grid-container{
-        padding-bottom:7em;
-        gap:20px;
+        padding-bottom:7em; /*Define o padding inferior*/
+        gap:20px; /*Define o espaço entre os elementos*/
     }
 
 
       /*Project Individual*/    
     .apresentacao-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /*Define a disposição do elemento*/
+        flex-direction: column; /*Coloca os elementos em coluna*/
+        align-items: center; /*Alinha os elementos ao centro horizontalmente*/
     }
 
     .apresentacao-project iframe {
-        order: 3; /* Define a ordem do iframe */
-        width: 100%;
-        height: 15em;
+        order: 3; /*Faz com que este iframe surja em terceiro lugar*/
+        width: 100%; /*Define a largura do iframe*/
+        height: 15em; /*Define a altura do iframe*/
     }
 
     #titles-project {
         order: 1; /* Define a ordem do título */
-        font-size: 1.6em;
-        text-align: center;
+        font-size: 1.6em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #titles-project p{
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .apresentacao-project p {
         order: 2; /* Define a ordem do parágrafo */
         text-align: justify; /* Centraliza o texto */
-        width:100%;
-        font-size: 0.7em;
+        width:100%; /*Define a largura*/
+        font-size: 0.7em; /*Define o tamanho da fonte*/
     }
 
     .producao iframe{
-        width: 100%;
-        height:12em;
-        padding: 0;
+        width: 100%; /*Define a largura do iframe*/
+        height:12em; /*Define a altura do iframe*/
+        padding: 0; /*Retira todos os padding que possa ter*/
     }
 
     .pre-producao{
-        margin-bottom: 20%;
+        margin-bottom: 20%; /*Define a margem inferior*/
     }
 
     .capa-projeto4{
-        margin-bottom: 20%;
+        margin-bottom: 20%; /*Define a margem inferior*/
     }
       
 }
@@ -876,107 +876,107 @@ article{
 
     /*Geral*/
     nav {
-        flex-direction: column; 
+        flex-direction: column; /*Coloca os elementos em coluna*/
     }
 
     .menu-links {
-        margin-top: 7%; 
+        margin-top: 7%; /*Define a margem superior*/
     }
 
     #logo {
-        font-size: 2em;
-        padding-top: 5%;
+        font-size: 2em; /*Define o tamanho da fonte*/
+        padding-top: 5%; /*Define o padding superior*/
     }
 
     footer {
-        height: auto;
-        margin-right: 5%;
-        padding-top:2em;
+        height: auto; /*A altura do footer fica automática*/
+        margin-right: 5%; /*Define a margem direita*/
+        padding-top:2em; /*Define o padding superior*/
     }
 
     .footer-socialmedia {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-        width: 100vw;        
+        flex-direction: row; /*Os elementos ficam em linha*/
+        flex-wrap: wrap; /*Devem ser dispostos em várias linhas caso necessário*/
+        justify-content: center; /*Justificar os elementos ao centro*/
+        gap: 1em; /*Define o espaço entre os elementos*/
+        width: 100vw; /*Define a largura*/
     }
 
     footer a {
-        width: 1.8em;
-        height: 1.8em;
-        padding-bottom: 10%;
+        width: 1.8em; /*Define a largura*/
+        height: 1.8em; /*Define a altura*/
+        padding-bottom: 10%; /*Define o padding inferior*/
     }
 
     /*Index*/
     .capa-index { 
-        width: 92%;  
-        background-size:auto;
+        width: 92%; /*Define a largura*/
+        background-size:auto; /*O background fica automático*/
     }
 
     #Video {
-        font-size:1.5em;
-        text-align: center;
+        font-size:1.5em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #Portfolio {
-        font-size:2.65em;
-        text-align: center;
+        font-size:2.65em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     /*About Me*/    
     .capa-about { 
-        width: 92%;
-        background-image:none;         
-        margin-bottom: 6em;
+        width: 92%; /*Define a largura*/
+        background-image:none; /*Retira a imagem de fundo*/ 
+        margin-bottom: 6em; /*Define a margem inferior*/
     }
 
     #titles{
-        padding-top: 10%;
-        font-size: 1.5em;
-        width: 100%;
-        text-align: center;
+        padding-top: 10%; /*Define o padding superior*/
+        font-size: 1.5em; /*Define o tamanho da fonte*/
+        width: 100%; /*Define a largura*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #subtitles{
-        font-size: 1em;
-        width: 100%;
-        text-align: center;
+        font-size: 1em; /*Define o tamanho da fonte*/
+        width: 100%; /*Define a largura*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     p{
-        font-size: 0.6em;
-        width: 100%;
-        text-align: center;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
+        width: 100%; /*Define a largura*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #skills ul{
-        font-size:0.6em;
-        display: flex;
-        flex-direction: column;
-        gap:2em;        
+        font-size:0.6em; /*Define o tamanho da fonte*/
+        display: flex; /*Define a disposição dos elementos*/
+        flex-direction: column; /*Coloca os elementos em coluna*/
+        gap:2em; /*Define o espaço entre os elementos*/
         justify-content: center; /* Alinha verticalmente ao centro */
         align-items: center; /* Alinha horizontalmente ao centro */
-        padding-left: 31%;
+        padding-left: 31%; /*Define o padding esquerdo*/
     }
 
     .button {
         width: 35%; /* Define a largura dos elementos */
-        font-size: 0.6em;
-        margin-top: 10%;
-        bottom:0;
-        right:25%;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
+        margin-top: 10%; /*Define a margem superior*/
+        bottom:0; /*Posiciona o elemento consoante a parte inferior*/
+        right:25%; /*Posiciona o elemento consoante o lado direito*/
     }
 
     #about{
-        background-color: #000000;
-        padding-top: 2em;
-        width: 92%;
+        background-color: #000000; /*Define a cor de fundo do footer*/
+        padding-top: 2em; /*Define o padding esquerdo*/
+        width: 92%; /*Define a largura*/
     }
 
     /*Projects*/    
     .grid-item p {
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .item1{
@@ -984,51 +984,51 @@ article{
     }
 
     .grid-container{
-        padding-bottom:7em;
-        gap:40px;
+        padding-bottom:7em; /*Define o padding inferior*/
+        gap:40px; /*Define o espaço entre as caixas da grid*/
     }
 
     /*Project Individual*/    
     .apresentacao-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /*Define o tipo de disposição*/
+        flex-direction: column; /*Coloca os elementos em coluna*/
+        align-items: center; /*Alinha os elementos ao centro horizontalmente*/
     }
 
     .apresentacao-project iframe {
         order: 3; /* Define a ordem do iframe */
-        width: 100%;
-        height: 10em;
+        width: 100%; /*Define a largura*/
+        height: 10em; /*Define a altura*/
     }
 
     #titles-project {
         order: 1; /* Define a ordem do título */
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.5em; /*Define o tamanho da fonte*/
+        text-align: center; /*Alinha o texto ao centro*/
     }
 
     #titles-project p{
-        font-size: 0.6em;
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .apresentacao-project p {
         order: 2; /* Define a ordem do parágrafo */
-        text-align: justify; /* Centraliza o texto */
-        font-size: 0.6em;
+        text-align: justify; /* Justifica o texto */
+        font-size: 0.6em; /*Define o tamanho da fonte*/
     }
 
     .producao iframe{
-        width: 100%;
-        height:12em;
-        padding: 0;
+        width: 100%; /*Define a largura*/
+        height:12em; /*Define a altura*/
+        padding: 0; /*Retira todos os padding que possam ter*/
     }
 
     .pre-producao{
-        margin-bottom: 20%;
+        margin-bottom: 20%; /*Define a margem inferior*/
     }
 
     .capa-projeto4{
-        margin-bottom: 24%;
+        margin-bottom: 24%; /*Define a margem inferior*/
     }
 
 }
