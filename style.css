@@ -382,14 +382,13 @@ article{
 
 
 /* PROJETOS */
-
 .grid-container {
     display: grid; /* Define o modelo de layout grid*/
     gap: 10px; /*Define um espaço de 10px entre cada elemento da flexbox */
     padding: 0%; /*Define em 0% todos os paddings*/
     padding-top: 5%; /*Define um padding superior de 5%*/
 }
-  
+
 .grid-item {
     display: flex; /* Define o modelo de flexbox */
     align-items: center; /* Alinha verticalmente no centro */
@@ -400,21 +399,31 @@ article{
     background-position: center; /* Centraliza a imagem na caixa respectiva */
   }
 
+.grid-item a {
+    display: flex; /*Centraliza o conteúdo*/
+    align-items: center; /*Alinha verticalmente ao centro*/
+    justify-content: center; /*Centraliza horizontalmente*/
+    text-decoration: none; /* Remove a decoração padrão do link */
+    width: 100%; /*Faz o link ocupar toda a largura do item da grid*/
+    height: 100%; /*Faz o link ocupar a altura do item da grid*/
+    position: absolute; /* Faz o link ocupar todo o espaço do grid item */
+    top: 0; /*Define a posição superior do link como 0*/
+    left: 0;/*Define a posição esquerda do link como 0*/
+}
+
 .grid-item:hover{
     box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 1); /* Efeito de vinheta */
 }
 
-.grid-item p{
-    width: 100%; /*Define a largura da área*/
-    text-align: center; /*Centraliza o texto*/
+.grid-item p {
+    width: 100%; /*Faz o p ocupar toda a largura do item*/
+    text-align: center; /*Centraliza horizontalmente*/
     font-size: 0.8em; /*Define o tamanho da fonte*/
-    white-space: nowrap; /* Impede que o texto quebre em novas linhas */
-    font-weight: 500; /*Torna o texto a bold*/
+    white-space: nowrap; /*Impede que o texto quebre em novas linhas*/
+    font-weight: 500; /*Define a espessura da fonte*/
     padding: 0; /*Retira todos os padding*/
-
-    opacity: 0; /* Inicialmente o texto é invisível */
-    visibility: hidden; /* Inicialmente o texto não é visível */
-    transition: opacity 0.5s ease, visibility 0.5s; /* Transição suave para a visibilidade e opacidade */
+    visibility: hidden; /*Inicialemente o texto fica invisivel*/
+    transition: opacity 0.5s ease, visibility 0.5s; /*Transição suave para opacidade e visibilidade*/
 }
 
 .grid-item:hover p {
@@ -432,14 +441,14 @@ article{
   }
   
 .item2 {
-    background-image: url("projects/projeto1/imagens/project1/capa-project1.jpg"); /*Define a imagem de fundo dessa caixa*/
+    background-image: url("projects/projeto1/imagens/project1/capa1_1.jpg"); /*Define a imagem de fundo dessa caixa*/
     box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
     background-size: cover; /*A imagem preenche a caixa*/
     background-position: top; /*Centraliza a imagem no topo da caixa respetiva*/
   }
 
 .item3 {
-    background-image: url("projects/projeto1/imagens/project2/capavideo-project2.jpg"); /*Define a imagem de fundo dessa caixa*/
+    background-image: url("projects/projeto1/imagens/project2/capa2_1.jpg"); /*Define a imagem de fundo dessa caixa*/
     box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.3); /* Efeito de vinheta */
     background-size: cover; /*A imagem preenche a caixa*/
     background-position: top; /*Centraliza a imagem no topo da caixa respetiva*/
@@ -458,6 +467,11 @@ article{
     background-size: cover; /*A imagem preenche a caixa*/
     background-position: top; /*Centraliza a imagem no topo da caixa respetiva*/
   }
+
+
+.item2:hover { background-image: url("projects/projeto1/imagens/project1/capa1_2.jpg"); } /*Define a imagem de fundo quando passo o rato por cima*/
+.item3:hover { background-image: url("projects/projeto1/imagens/project2/capa2_2.jpg");} /*Define a imagem de fundo quando passo o rato por cima*/
+
 
 
 /* RESPONSIVE */
