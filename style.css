@@ -1078,5 +1078,6 @@ article{
         margin-bottom: 30%;
     }
 
+    .item2:active { background-image: url("projects/projeto1/imagens/project1/capa1_2.jpg"); }
 }
 
