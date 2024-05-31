@@ -620,6 +620,10 @@ article{
     .pre-producao{
         margin-bottom: 15%; /*Define a margem inferior desta área*/
     }
+
+    .capa-projeto3{
+        margin-bottom: 12%;
+    }
 }
 
 
@@ -724,6 +728,10 @@ article{
 
     .pre-producao{
         margin-bottom: 15%; /*Define a margem inferior de 15% */
+    }
+
+    .capa-projeto3{
+        margin-bottom: 14%;
     }
 }
 
@@ -901,6 +909,10 @@ article{
     .capa-projeto4{
         margin-bottom: 20%; /*Define a margem inferior*/
     }
+
+    .capa-projeto3{
+        margin-bottom: 20%;
+    }
       
 }
 
@@ -1072,6 +1084,10 @@ article{
 
     .capa-projeto4{
         margin-bottom: 24%; /*Define a margem inferior*/
+    }
+
+    .capa-projeto3{
+        margin-bottom: 24%;
     }
 
     .producao{
